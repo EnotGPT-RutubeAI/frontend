@@ -20,7 +20,7 @@ import UnstyledSelectIntroduction from '@/components/common/Select'
 import { BlockPicker, SketchPicker } from 'react-color'
 import { useMutation, useQuery } from 'react-query'
 import { Bars, Blocks } from 'react-loader-spinner'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 
 export function SettingsFragment() {
   const contextVP = useContext(contextVideoPlayer)
@@ -213,7 +213,7 @@ function Viral() {
           ></Box>
           Настройки
         </Center>
-        {mutation.isLoading ? (
+        {!mutation.isLoading ? (
           <Center
             flex={1}
             paddingX={'1vw'}
