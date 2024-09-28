@@ -1,0 +1,56 @@
+import { useContext, createContext } from 'react'
+
+export const contextVideoPlayer = createContext({
+  videoURL: null,
+  setVideoURL: null,
+  videoRef: null,
+  setVideoRef: null,
+  isPlaying: false,
+  setIsPlaying: null,
+  currentTime: 0,
+  videoDurration: 0,
+  leftBorder: 0,
+  rightBorder: 0,
+  selectedFragment: null,
+  setSelectedFragment: null,
+  selectedObject: null,
+  setSelectedObject: null,
+  allPreset: null,
+  setAllPreset: null,
+  allPresetFindObject: null,
+  setAllPresetFindObject: null,
+  subtitleBackground: null,
+  setSubtitleBackground: null,
+  subtitleColor: null,
+  setSubtitleColor: null,
+  subtitlePosition: null,
+  setSubtitlePosition: null,
+  subtitleFont: null,
+  setSubtitleFont: null,
+  subtitleCutted: null,
+  setSubtitleCutted: null,
+  answerServer: {
+    id_video: 0,
+    name_video: '',
+    description: '',
+    tags: [],
+
+    subtitles: [],
+    modelIvanaAudio: [],
+    modelIvanaVolume: [],
+    modelIvanaVideo: [],
+    emotion_all_text: null,
+    parameter_text_recog: null,
+    big_interesting_segments: []
+  },
+  setAnswerServer: null,
+  settingsRender: {
+    name_video: '',
+    format_video: 0,
+    subtitlesColor: '',
+    subtitlesBgColor: '',
+    emoji: false,
+    face: false
+  },
+  setSettingsRender: null
+})
