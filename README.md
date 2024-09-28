@@ -21,7 +21,7 @@
 1. Клонируйте репозиторий:
 
    ```bash
-   git clone https://github.com/ivan-sygin/kod-mira-frontend.git
+   git clone https://github.com/EnotGPT-RutubeAI/frontend.git
 
 2. Перейдите в каталог проекта:
 
