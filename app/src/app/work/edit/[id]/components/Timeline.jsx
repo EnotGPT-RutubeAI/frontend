@@ -212,23 +212,35 @@ export function Timeline() {
               flex={1}
               border={1}
               sx={{
-                background: gradient
+                background: gradient,
+                fontWeight: 900,
+                textShadow: '0px 0px 20px black ;'
               }}
-            ></Row>
+            >
+              Аудио
+            </Row>
             <Row
               flex={1}
               border={1}
               sx={{
-                background: gradient1
+                background: gradient1,
+                fontWeight: 900,
+                textShadow: '0px 0px 20px black ;'
               }}
-            ></Row>
+            >
+              Громкость
+            </Row>
             <Row
               flex={1}
               border={1}
               sx={{
-                background: gradient2
+                background: gradient2,
+                fontWeight: 900,
+                textShadow: '0px 0px 20px black ;'
               }}
-            ></Row>
+            >
+              Кадры
+            </Row>
           </Column>
         ) : (
           <></>

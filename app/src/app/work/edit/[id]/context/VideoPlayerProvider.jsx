@@ -4,7 +4,7 @@ import { contextVideoPlayer } from './VideoPlayerContext'
 export function VideoPlayerContext({ children }) {
   const [isPlaying, setIsPlaying] = useState(false)
   const [videoURL, setVideoURL] = useState(
-    'http://fileserver.enotgpt.ru/videos/a5bceed1d9b554f41baa7b838439d9.mp4'
+    'http://fileserver.enotgpt.ru/videos/200c30550c1b96b1d344e0bccfc228.mp4'
   )
   const [videoRef, setVideoRef] = useState()
   const [currentTime, setCurrentTime] = useState(0)
@@ -1144,7 +1144,7 @@ export function VideoPlayerContext({ children }) {
         text: ' Такие дела.'
       }
     ],
-    
+
     modelIvanaAudio: [],
     modelIvanaVolume: [],
     modelIvanaVideo: [],
@@ -1172,7 +1172,7 @@ export function VideoPlayerContext({ children }) {
         timestamp: [718.56, 722.4]
       }
     ],
-    updatedBig:[]
+    updatedBig: []
   })
   const [settingsRender, setSettingsRender] = useState({
     name_video: '',

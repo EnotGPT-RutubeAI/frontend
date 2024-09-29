@@ -110,7 +110,6 @@ export function Player() {
                 }
               }}
               ref={videoRef}
-              preload='metadata'
               width={'100%'}
               height={'100%'}
               src={contextVP.videoURL}

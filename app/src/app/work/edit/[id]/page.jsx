@@ -10,6 +10,7 @@ import { useQuery } from 'react-query'
 
 import {
   Audio,
+  Blocks,
   CirclesWithBar,
   DNA,
   Grid,
@@ -25,10 +26,20 @@ import { Timeline } from './components/Timeline'
 import { SettingsFragment } from './components/SettingsFragment'
 import { contextVideoPlayer } from './context/VideoPlayerContext'
 import { VideoPlayerContext } from './context/VideoPlayerProvider'
+import { Overlay } from '@/components/common/Overlay'
 
 export default function Page({ params }) {
+  const contextVP = useContext(contextVideoPlayer)
   return (
     <Row height={'100dvh'}>
+      <Box
+        position={'absolute'}
+        display={contextVP.videoDurration == 0 ? 'block' : 'none'}
+      >
+        <Overlay>
+          <Blocks></Blocks>
+        </Overlay>
+      </Box>
       <Column
         width={'12%'}
         maxWidth={'20%'}
